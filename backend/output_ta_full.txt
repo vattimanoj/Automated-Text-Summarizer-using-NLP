@@ -1,0 +1,15 @@
+Detected lang: ta
+Translated to EN:
+India is a country in South Asia. It is officially known as the Republic of India[d][23]. It is the seventh largest country in the world in terms of area and the number one country in the world in terms of population. It is surrounded by the Indian Ocean to the south, the Arabian Sea to the southwest, and the Bay of Bengal to the southeast. It shares land borders with Pakistan to the west,[e] China, Nepal, and Bhutan to the north, and Bangladesh and Myanmar to the east. India is located in the Indian Ocean near Sri Lanka and Maldives. Part of India, the Andaman and Nicobar Islands share maritime borders with Thailand, Myanmar and Indonesia.
+
+Modern humans arrived in the Indian subcontinent from Africa at least 55,000 years ago.[25][26][27] Initially they were hunter-gatherers in different forms of isolation They lived for a long time. This makes the region highly diverse genetically. This makes India second only to Africa in terms of human genetic diversity.[28] Settled life in the subcontinent appeared in the western reaches of the Indus basin about 9,000 years ago. It gradually evolved into the Indus Valley Civilization. F. Formed in the 3rd millennium AD.[29] B. F. By 1,200 BCE, an Indo-European form of Sanskrit, a now defunct form, had spread into India from the northwest.[30][31] Evidence for this is found in the religious hymns of the Vedas today. It was preserved by an oral tradition that was carefully memorized with determination. The Vedas record the origins of Hinduism in India.[32] Thus the Dravidian languages ​​in India were displaced to the north and west.[33] B. F. By 400 AD, the hierarchical system by caste was different and exclusion began to develop within Hinduism.[34] Buddhism and China appeared. They declared that social hierarchy was unrelated to tradition.[35] Early political alliances made the disparate Mauryan and Gupta empires appear to be based on land along the Ganges.[36] The overall era of these empires was one of widespread creativity.[37] But this period also saw a decline in the status of women.[38] This period also played a role in the development of untouchability as a unified belief system.[f][39] Medieval kingdoms in South India spread Dravidian writing systems and religious traditions to the kingdoms of Southeast Asia.
+
+Summary EN:
+India is a country in South Asia.
+
+modern humans arrived in the Indian subcontinent from africa at least 55,000 years ago. this makes India second only to Africa in terms of human genetic diversity.
+
+Translated back to TA:
+இந்தியா தெற்காசியாவில் உள்ள ஒரு நாடு.
+
+நவீன மனிதர்கள் இந்திய துணைக்கண்டத்திற்கு குறைந்தது 55,000 ஆண்டுகளுக்கு முன்பு ஆப்பிரிக்காவில் இருந்து வந்தனர். இது மனித மரபணு வேறுபாட்டின் அடிப்படையில் ஆப்பிரிக்காவிற்கு அடுத்தபடியாக இந்தியாவை இரண்டாவதாக ஆக்குகிறது.

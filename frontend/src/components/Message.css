@@ -1,0 +1,101 @@
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.message-error {
+  background: #ffebee !important;
+  border-color: #f44336 !important;
+  color: #c62828 !important;
+}
+
+.message-timestamp {
+  font-size: 10px;
+  color: #999;
+  padding: 0 4px;
+}
+
+.message.user .message-timestamp {
+  text-align: right;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.rating-input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120px;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.rating-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #4a90e2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rating-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.rating-display-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a90e2;
+  min-width: 50px;
+}
+
+/* ── Image message bubble ─────────────────────────────────────── */
+.message-has-image {
+  padding: 8px !important;
+}
+
+.message-image-wrapper {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.message-image {
+  max-width: 260px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid rgba(74, 144, 226, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+.message-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.35);
+}
+
+.message-text {
+  display: block;
+  font-size: 13px;
+  color: inherit;
+  word-break: break-word;
+}

@@ -1,0 +1,9 @@
+INPUT:
+Located in south Asia, it is the seventh-largest country by land area and the most populous country globally, with over 1.4 billion people. India s history dates back more than 5,000 years to the Indus Valley Civilization, one of the world s earliest urban cultures.
+
+PROMPT 'summarize:':
+the country is the seventh-largest country by land area and the most populous country globally. it dates back more than 5,000 years to the Indus Valley Civilization.
+
+PROMPT 'summarize briefly:':
+Located in south Asia, it is the seventh-largest country by land area and the most populous country globally. it dates back more than 5,000 years to the Indus Valley Civilization, one of the world s earliest urban cultures.
+

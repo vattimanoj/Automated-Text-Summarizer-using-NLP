@@ -1,0 +1,9 @@
+General Overview:
+machine learning is a field of Artificial Intelligence that focuses on building systems capable of learning from data.
+
+Structured Breakdown:
+Supervised Learning: Supervised learning is the most widely used type of machine learning
+  Sub-types: Regression (Regression is used when the output is a continuous value); Classification (Classification is used when the output is categorical (discrete classes)); Algorithms (Logistic Regression, Decision Trees, Random Forests, Support Vector Machines, k-Nearest Neighbors.); Ensemble Methods (Ensemble methods combine multiple models to improve accuracy and robustness)
+Unsupervised Learning: Unsupervised learning works with unlabeled data
+  Sub-types: Clustering (Clustering groups data points into clusters based on similarity); Dimensionality Reduction (Dimensionality reduction simplifies data by reducing the number of features while retaining essential information); Association Rule Learning (- Association rule learning finds relationships between variables in large datasets)
+Semi-Supervised Learning: Semi-supervised learning combines both labeled and unlabeled data

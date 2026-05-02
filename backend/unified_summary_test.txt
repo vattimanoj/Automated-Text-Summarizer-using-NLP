@@ -1,0 +1,8 @@
+SUMMARY CONTENT:
+ML is a branch of artificial intelligence (AI) that enables computers to learn from data and improve their performance automatically without being explicitly programmed. it uses algorithms to identify patterns and make predictions or decisions based on new data. Supervised Learning * Definition: The model is trained on a labeled dataset (input-output pairs), finding hidden patterns or structures.
+
+### Core Categories & Definitions:
+- Supervised Learning: The model is trained on a labeled dataset (input-output pairs)
+- Unsupervised Learning: The model is trained on unlabeled data, finding hidden patterns or structures
+- Semi-Supervised Learning: Uses a small amount of labeled data and a large amount of unlabeled data
+- Reinforcement Learning (RL): The model (agent) learns by interacting with an environment and receiving rewards or penalties for its actions

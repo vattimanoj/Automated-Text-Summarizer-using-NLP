@@ -1,0 +1,80 @@
+.user-stats-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.user-stats-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 12px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stats-info {
+  margin-top: 20px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.stats-info h4 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.stats-info p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Sidebar Specific Stats */
+.sidebar-stats {
+  padding: 0.75rem;
+  background: #232323;
+  border-radius: 8px;
+  margin-top: auto;
+  border: 1px solid #3d3d3d;
+}
+
+.sidebar-stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #8e8e8e;
+  font-weight: 500;
+}

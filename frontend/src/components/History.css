@@ -1,0 +1,112 @@
+.sidebar-history-container {
+    width: 100%;
+}
+
+.sidebar-section-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    padding: 1rem 0.75rem 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.clickable-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+    padding-right: 0.75rem;
+}
+
+.clickable-title:hover {
+    background: #2f2f2f;
+    color: #ccc;
+}
+
+.history-arrow {
+    font-size: 1rem;
+    transition: transform 0.25s ease;
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+
+.history-arrow.open {
+    transform: rotate(0deg);
+}
+
+.sidebar-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar-history-item {
+    padding: 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: #ececec;
+    font-size: 0.9rem;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-history-item:hover .delete-history-btn {
+    opacity: 1;
+}
+
+/* Currently active/open history item */
+.sidebar-history-item.active {
+    background-color: #2a2a2a;
+    border-left: 3px solid #7c5cfc;
+    padding-left: calc(0.75rem - 3px);
+    color: #ffffff;
+}
+
+.sidebar-history-item.active .history-icon {
+    opacity: 1;
+}
+
+.delete-history-btn {
+    opacity: 0;
+    background: none;
+    border: none;
+    color: #8e8e8e;
+    font-size: 1.2rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.delete-history-btn:hover {
+    color: #ff4d4d;
+    background: #3d3d3d;
+}
+
+.history-icon {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.history-text {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-history-sidebar {
+    padding: 1rem 0.75rem;
+    font-size: 0.85rem;
+    color: #676767;
+    font-style: italic;
+}

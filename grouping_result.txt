@@ -1,0 +1,6 @@
+SUMMARY OUTPUT:
+--------------------------------------------------
+Machine Learning Core Concepts: Artificial intelligence is a broad field with many sub-branches. 1. Supervised Learning: This involves training a model on labeled data where inputs and outputs are known. 2. Unsupervised Learning: This involves finding patterns in unlabeled data without predefined outputs.
+--------------------------------------------------
+
+[FAILURE] Root heading 'Key Types of Learning' not found in summary.

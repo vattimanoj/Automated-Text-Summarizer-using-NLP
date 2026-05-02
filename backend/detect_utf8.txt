@@ -1,0 +1,4 @@
+﻿en confidence: 4.60% (Text sample: 62obe-5e 8ersd)
+Error testing te: 'charmap' codec can't encode characters in position 36-50: character maps to <undefined>
+Error testing hi: 'charmap' codec can't encode character '\u091b' in position 35: character maps to <undefined>
+--> Auto-detected language: en (score: 4.60%)

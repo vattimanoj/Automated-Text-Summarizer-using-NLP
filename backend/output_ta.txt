@@ -1,0 +1,3 @@
+Detected lang: ta
+Translated to EN: India is a country in South Asia. It is officially called the Republic of India. It is the seventh largest country in the world in terms of area and the number one country in the world in terms of population.
+Translated back to TA: இந்தியா தெற்காசியாவில் உள்ள ஒரு நாடு. இது அதிகாரப்பூர்வமாக இந்திய குடியரசு என்று அழைக்கப்படுகிறது. பரப்பளவில் உலகின் ஏழாவது பெரிய நாடாகவும், மக்கள்தொகை அடிப்படையில் உலகின் முதல் நாடாகவும் உள்ளது.

@@ -1,0 +1,5 @@
+Translate available: True
+Langdetect available: True
+Detected lang: te
+Translated to EN: Hi, this is Telugu text. Summary should also come in Telugu. This is just a test but we will understand.
+Translated back to TE: హాయ్, ఇది తెలుగు వచనం. సారాంశం తెలుగులో కూడా రావాలి. ఇది కేవలం ఒక పరీక్ష, కానీ మేము అర్థం చేసుకుంటాము.
