@@ -2,8 +2,8 @@ import requests
 import json
 
 BASE_URL = "http://localhost:8000"
-EMAIL = "admin@example.com"
-PASSWORD = "admin123"
+EMAIL = "manojvatti2004@gmail.com"
+PASSWORD = "manoj123"
 
 def test_flow():
     try:

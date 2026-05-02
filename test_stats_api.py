@@ -24,8 +24,8 @@ def test_login():
         response = requests.post(
             f"{BASE_URL}/api/auth/login",
             json={
-                "email": "admin@example.com",
-                "password": "admin123"
+                "email": "manojvatti2004@gmail.com",
+                "password": "manoj123"
             }
         )
         if response.status_code == 200:

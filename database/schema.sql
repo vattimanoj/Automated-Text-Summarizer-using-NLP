@@ -72,8 +72,8 @@ CREATE TABLE IF NOT EXISTS explanations (
     UNIQUE KEY unique_summary (summary_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Insert demo admin user (password: admin123)
--- Password hash for 'admin123' using pbkdf2_sha256 (matches backend auth.py)
+-- Insert demo admin user (password: manoj123)
+-- Password hash for 'manoj123' using pbkdf2_sha256 (matches backend auth.py)
 INSERT INTO users (name, email, password_hash, role) 
-VALUES ('Admin User', 'admin@example.com', '$pbkdf2-sha256$29000$d.4dI4SQ0lqLEULImZNSSg$lpk/YrZ02UcEnr2I1RmwvSxHF6Hd7f.frgWESrQxKV0', 'admin')
+VALUES ('Admin User', 'manojvatti2004@gmail.com', '$pbkdf2-sha256$29000$LiLcnqbx/Ke38FVJKejf1w$ozDYcUEAeBQXAzuI1DKj1L2S8WoCuALNWW9ry0/lZuA', 'admin')
 ON DUPLICATE KEY UPDATE name=name;

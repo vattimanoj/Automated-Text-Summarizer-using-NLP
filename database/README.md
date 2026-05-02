@@ -30,8 +30,8 @@ DATABASE_URL=mysql+pymysql://root:yourpassword@localhost:3306/text_summarizer
 ```
 
 ## Test Admin User
-- Email: admin@example.com
-- Password: admin123
+- Email: manojvatti2004@gmail.com
+- Password: manoj123
 
 ## Notes
 - All tables use InnoDB engine for foreign key support

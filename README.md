@@ -356,8 +356,8 @@ lsof -ti:8000 | xargs kill
 
 ## 🔐 Default Test Account
 
-- **Email:** admin@example.com
-- **Password:** admin123
+- **Email:** manojvatti2004@gmail.com
+- **Password:** manoj123
 
 ## 📝 Notes
 
@@ -377,15 +377,17 @@ lsof -ti:8000 | xargs kill
 ## 📄 License
 
 This project is developed for educational purposes as a Final Year B.Tech project.
+Contact: manojvatti2004@gmail.com
 
 ## 👥 Contributors
 
 Developed as part of Final Year B.Tech Project (CSE-C, Batch 7, 2026)
+Email: manojvatti2004@gmail.com
 
 ---
 
-**For any issues or questions, please check the documentation or contact the development team.**
+**For any issues or questions, please check the documentation or contact the development team at manojvatti2004@gmail.com.**
 
 
-Email	admin@example.com
-Password	admin123
+Email	manojvatti2004@gmail.com
+Password	manoj123

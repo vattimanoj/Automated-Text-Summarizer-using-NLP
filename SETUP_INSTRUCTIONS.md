@@ -73,8 +73,8 @@ Frontend runs at: `http://localhost:3000`
 
 ## Test Login
 
-- Email: `admin@example.com`
-- Password: `admin123`
+- Email: `manojvatti2004@gmail.com`
+- Password: `manoj123`
 
 ## Troubleshooting
 
