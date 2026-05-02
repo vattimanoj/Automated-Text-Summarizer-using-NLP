@@ -357,7 +357,6 @@ lsof -ti:8000 | xargs kill
 ## 🔐 Default Test Account
 
 - **Email:** manojvatti2004@gmail.com
-- **Password:** manoj123
 
 ## 📝 Notes
 
@@ -390,4 +389,3 @@ Email: manojvatti2004@gmail.com
 
 
 Email	manojvatti2004@gmail.com
-Password	manoj123

@@ -74,7 +74,6 @@ Frontend runs at: `http://localhost:3000`
 ## Test Login
 
 - Email: `manojvatti2004@gmail.com`
-- Password: `manoj123`
 
 ## Troubleshooting
 
