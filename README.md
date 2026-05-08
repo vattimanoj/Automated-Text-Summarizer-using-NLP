@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Automated Text Summarizer using NLP
 
 **Final Year B.Tech Project (2026 Batch)**
