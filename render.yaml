@@ -18,10 +18,11 @@ services:
         value: "https://text-summarizer-frontend.onrender.com" # Replace after first deployment
 
   # Frontend Service (Static Site)
-  - type: static
+  - type: web
     name: text-summarizer-frontend
+    runtime: static
     buildCommand: "cd frontend && npm install && npm run build"
-    publishPath: frontend/build
+    staticPublishPath: frontend/build
     envVars:
       - key: REACT_APP_API_URL
         value: "https://text-summarizer-backend.onrender.com"
