@@ -7,7 +7,7 @@ from typing import List
 import threading
 import os
 from app.ml_model.dataset_collector import DatasetCollector
-from app.ml_model.model_trainer import ModelTrainer
+
 
 logger = logging.getLogger(__name__)
 
@@ -60,7 +60,8 @@ def run_incremental_training(db: Session):
             logger.error("CSV file is empty. Cannot train.")
             return
         
-        # Prepare trainer
+        # Lazy load trainer to save RAM
+        from app.ml_model.model_trainer import ModelTrainer
         trainer = ModelTrainer()
         
         # Load all data from CSV (including old + new)

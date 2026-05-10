@@ -6,7 +6,7 @@ from app.schemas import FeedbackCreate, FeedbackResponse
 from app.auth import get_current_active_user
 from app.config import settings
 import logging
-from app.ml_model.auto_training import trigger_auto_training_if_needed
+
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -52,7 +52,8 @@ async def create_feedback(
     # Check if we should trigger auto-training
     if settings.AUTO_TRAINING_ENABLED and feedback_data.rating >= settings.MIN_FEEDBACK_RATING:
         try:
-            # This will run in background
+            # Lazy load training trigger to save RAM and prevent startup crashes
+            from app.ml_model.auto_training import trigger_auto_training_if_needed
             trigger_auto_training_if_needed(db, feedback)
         except Exception as e:
             logger.error(f"Error in auto-training trigger: {e}")

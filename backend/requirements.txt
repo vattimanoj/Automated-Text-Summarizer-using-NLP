@@ -10,17 +10,17 @@ python-dotenv==1.0.0
 pydantic==2.5.3
 pydantic-settings==2.1.0
 email-validator>=2.0.0
-transformers>=4.36.0
+transformers==4.40.2
 sentencepiece>=0.1.99
 rouge-score>=0.1.2
 numpy>=1.24.0,<2.0.0
 scipy>=1.11.0
 nltk>=3.8.1
 aiofiles>=23.2.1
-datasets>=2.16.0
+datasets==2.19.1
 pandas>=2.1.0
 tqdm>=4.66.0
-accelerate>=0.25.0
+accelerate==0.30.1
 fsspec>=2024.2.0
 huggingface-hub>=0.20.0
 # Image upload / OCR / multilingual
