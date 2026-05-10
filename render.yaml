@@ -20,7 +20,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: ALLOWED_ORIGINS
-        value: "https://text-summarizer.onrender.com"
+        value: "https://text-summarizer-frontend-8a7m.onrender.com,https://text-summarizer.onrender.com"
 
   # Frontend Service (Static Site)
   - type: web
