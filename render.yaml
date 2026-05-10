@@ -1,14 +1,14 @@
 services:
   # Backend Service
   - type: web
-    name: text-summarizer-backend
+    name: text-summarizer-api
     env: python
     plan: free
     buildCommand: "cd backend && pip install --upgrade pip && pip install torch==2.3.1+cpu torchvision==0.18.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu && pip install 'transformers[torch]==4.40.2' && pip install -r requirements.txt"
     startCommand: "cd backend && gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --timeout 120"
     envVars:
       - key: ENV
-        value: p
+        value: production
       - key: MALLOC_ARENA_MAX
         value: "2"
       - key: PYTHON_VERSION
@@ -20,17 +20,17 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: ALLOWED_ORIGINS
-        value: "https://text-summarizer-frontend-k1nu.onrender.com,https://text-summarizer-frontend.onrender.com"
+        value: "https://text-summarizer.onrender.com"
 
   # Frontend Service (Static Site)
   - type: web
-    name: text-summarizer-frontend
+    name: text-summarizer
     runtime: static
     buildCommand: "cd frontend && npm install && npm run build"
     staticPublishPath: frontend/build
     envVars:
       - key: REACT_APP_API_URL
-        value: "https://text-summarizer-backend-k1nu.onrender.com"
+        value: "https://text-summarizer-api.onrender.com"
 
 databases:
   - name: text-summarizer-db
