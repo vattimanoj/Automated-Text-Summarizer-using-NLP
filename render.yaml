@@ -20,7 +20,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: ALLOWED_ORIGINS
-        value: "https://text-summarizer-frontend.onrender.com" # Replace after first deployment
+        value: "https://text-summarizer-frontend-k1nu.onrender.com,https://text-summarizer-frontend.onrender.com"
 
   # Frontend Service (Static Site)
   - type: web
@@ -30,7 +30,7 @@ services:
     staticPublishPath: frontend/build
     envVars:
       - key: REACT_APP_API_URL
-        value: "https://text-summarizer-backend.onrender.com"
+        value: "https://text-summarizer-backend-k1nu.onrender.com"
 
 databases:
   - name: text-summarizer-db
