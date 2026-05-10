@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import axios from '../utils/axios';
+import axios, { API_URL } from '../utils/axios';
 import './Profile.css';
 
 const Profile = ({ onClose }) => {
@@ -208,7 +208,7 @@ const Profile = ({ onClose }) => {
                                 title="Click to upload photo"
                             >
                                 {user?.profile_photo ? (
-                                    <img src={user.profile_photo.startsWith('http') ? user.profile_photo : `http://localhost:8000${user.profile_photo}`} alt="Profile" className="avatar-img" />
+                                    <img src={user.profile_photo.startsWith('http') ? user.profile_photo : `${API_URL}${user.profile_photo}`} alt="Profile" className="avatar-img" />
                                 ) : (
                                     user?.name?.charAt(0).toUpperCase() || 'U'
                                 )}

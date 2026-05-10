@@ -20,10 +20,16 @@ if USE_SQLITE:
     )
     print(f"Using SQLite database: {SQLITE_PATH}")
 else:
-    # MySQL - requires MySQL server running
+    # Production database (PostgreSQL/MySQL)
+    db_url = os.environ.get("DATABASE_URL", settings.DATABASE_URL)
+    
+    # Render and Heroku provide postgres:// but SQLAlchemy requires postgresql://
+    if db_url and db_url.startswith("postgres://"):
+        db_url = db_url.replace("postgres://", "postgresql://", 1)
+        
     try:
         engine = create_engine(
-            settings.DATABASE_URL,
+            db_url,
             pool_pre_ping=True,
             pool_recycle=300,
             echo=False
@@ -31,7 +37,7 @@ else:
         # Test connection
         with engine.connect() as conn:
             pass
-        print("Connected to MySQL database")
+        print("Connected to production database")
     except Exception as e:
         print(f"MySQL connection failed: {e}")
         print("Falling back to SQLite...")

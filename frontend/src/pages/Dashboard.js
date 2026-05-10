@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { API_URL } from '../utils/axios';
 import Chatbot from '../components/Chatbot';
 import UserStats from '../components/UserStats';
 import History from '../components/History';
@@ -70,7 +71,7 @@ const Dashboard = () => {
             <div className="avatar-circle">
               {user?.profile_photo ? (
                 <img
-                  src={user.profile_photo.startsWith('http') ? user.profile_photo : `http://localhost:8000${user.profile_photo}?t=${new Date().getTime()}`}
+                  src={user.profile_photo.startsWith('http') ? user.profile_photo : `${API_URL}${user.profile_photo}?t=${new Date().getTime()}`}
                   alt="Profile"
                   className="avatar-mini"
                 />

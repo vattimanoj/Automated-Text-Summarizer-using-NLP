@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../utils/axios';
 import './Login.css';
 
 const ForgotPassword = () => {
@@ -44,7 +44,7 @@ const ForgotPassword = () => {
         setError('');
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:8000/api/auth/forgot-password', { email });
+            const response = await axios.post('/api/auth/forgot-password', { email });
             setToken(response.data.reset_token);
             setStep(2);
         } catch (err) {
@@ -93,7 +93,7 @@ const ForgotPassword = () => {
         setError('');
         setLoading(true);
         try {
-            await axios.post('http://localhost:8000/api/auth/reset-password', {
+            await axios.post('/api/auth/reset-password', {
                 token: token,
                 new_password: newPassword
             });

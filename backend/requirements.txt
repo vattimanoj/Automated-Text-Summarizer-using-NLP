@@ -28,3 +28,5 @@ easyocr>=1.7.0
 Pillow>=10.0.0
 langdetect>=1.0.9
 googletrans==4.0.0rc1
+gunicorn==21.2.0
+psycopg2-binary==2.9.9

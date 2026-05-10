@@ -22,12 +22,23 @@ logger = logging.getLogger(__name__)
 # ── OCR helpers using EasyOCR/Tesseract ──────────────
 try:
     import pytesseract
-    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-    TESSERACT_AVAILABLE = os.path.exists(pytesseract.pytesseract.tesseract_cmd)
+    # In production (Linux/Render), tesseract is usually in the PATH
+    # In local (Windows), it's at the specified path
+    tesseract_cmd = os.environ.get("TESSERACT_CMD", r'C:\Program Files\Tesseract-OCR\tesseract.exe' if os.name == 'nt' else 'tesseract')
+    pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
+    
+    # Check if tesseract is available by running it
+    import subprocess
+    try:
+        subprocess.run([tesseract_cmd, '--version'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        TESSERACT_AVAILABLE = True
+    except Exception:
+        TESSERACT_AVAILABLE = False
+        
     if TESSERACT_AVAILABLE:
-        logger.info("Tesseract available – high quality Indic OCR enabled")
+        logger.info(f"Tesseract available at {tesseract_cmd} – high quality Indic OCR enabled")
     else:
-        logger.warning("Tesseract binary not found at default location. Falling back to EasyOCR.")
+        logger.warning(f"Tesseract binary not found at {tesseract_cmd}. Falling back to EasyOCR.")
 except ImportError:
     TESSERACT_AVAILABLE = False
     logger.warning("pytesseract not installed")
