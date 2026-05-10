@@ -4,7 +4,7 @@ services:
     name: text-summarizer-backend
     env: python
     plan: free
-    buildCommand: "cd backend && pip install --upgrade pip && pip install torch==2.1.2+cpu torchvision==0.16.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu && pip install -r requirements.txt"
+    buildCommand: "cd backend && pip install --upgrade pip && pip install torch==2.3.1+cpu torchvision==0.18.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu && pip install -r requirements.txt"
     startCommand: "cd backend && gunicorn app.main:app -w 1 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --timeout 120"
     envVars:
       - key: ENV
