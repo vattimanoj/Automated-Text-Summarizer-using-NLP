@@ -18,9 +18,8 @@ services:
         value: "https://text-summarizer-frontend.onrender.com" # Replace after first deployment
 
   # Frontend Service (Static Site)
-  - type: web
+  - type: static
     name: text-summarizer-frontend
-    env: node
     buildCommand: "cd frontend && npm install && npm run build"
     publishPath: frontend/build
     envVars:
